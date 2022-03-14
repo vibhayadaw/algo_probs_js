@@ -23,3 +23,4 @@
 console.log(numDistinct('abc', 'abc'));
 console.log(numDistinct('rabbbit','rabbit'))
 console.log(numDistinct('rabbwwwbit','rabbit'))
+console.log(numDistinct('rabbwwwbit','rabbggggit'))
