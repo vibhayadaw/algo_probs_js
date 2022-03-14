@@ -65,10 +65,10 @@ function wordBreakRec (A, B){
         //iterate over dictionary and exit on either all cases ends or found all words.
         if(list.indexOf(B[i]) !== -1){
             // then word exist take it out.
-            // console.log(B[i])
-            // console.log(list.substring(0,list.indexOf(B[i])-1))
+            console.log(B[i])
+            console.log(list.substring(0,list.indexOf(B[i])-1))
             list = [list.substring(0,list.indexOf(B[i])),list.substring(list.indexOf(B[i])+B[i].length)].join('')
-            // console.log(list)
+            console.log(list)
             if(list.length === 0){
                 return 1;
             }
@@ -86,4 +86,4 @@ console.log(wordBreakRec(A,B))
 A = "aaaabaaaaababaababbaabababaabbaababaaaabababbbaaabbaabbaaaaaababbaabbaabaabbbbbbbbabbbaabbbbabbbaababababbaabaabaabbbbbaaabaabbbbbbbbbaaabaaabbaababaabbbbaabaaabaabbabbbbbbabababababbaabbabbbbbbbbbabaababbaaabbbbaabaaaabbaabaaaabaaaabababbbbbbababbaabaaababbaaabbbbaababaaabababbbbbbaababbaaabaababbbbbbaaabbababaabaabbbabaaaaabbabbbbbbbaaaaabbaaaabbbbbbbaaabbabbaaaaabbbbbabababbabbbbbbaabababbaaababbbaababbaaaabbbabbbbaabaabbaaaabbabbbbbbaaaaababbbbbaaabababbabbabbabbbbabababaaaaaabbbbaababaababababbbbabbbbabbaabbbaaaabbbbabaabbaabaaaaaaabaabbabbabbaaabaabbabababababaabaaababaabaabbbabaababaabbaaabbbaaabaabaababbaababaabbabbabbbaaaaababbbaaabbaaaabaaabaabbabaaabbbbbaaaaabaaabbbabbbabbabbababbbbbababaabbbabbaabbaaabaaaaabbbbabbaaabaabbaababbbababbaabbbbbababbabaaaabbaabbbbbbbaabaabbbbbbabaabaababbbbbababaaabaaababbabbbbbbabbbbabbbbbbbbbabaabbaabbbbbbbaabaaaaaabaaaaaabbabbbbbbbbbabbabbabbababbbaabbaabbabbbbaaaaaaabaaaaabbabbbbabbbaaabbaabaababbbbaabbababaaaaabbaabaaabbbabbbaaaba"
 B = [ "babbaaabbb", "bbaaabb", "aaabbabba", "aabaabbba", "abb", "bbbabaab", "aabbb", "abaa", "aab", "babababbbb", "abaaabba", "aabbabaaa", "aabababba", "bbbabbbbb", "bbbabaabba", "ba", "ba", "bb", "a", "bba", "ababbbab", "a", "bbaa", "abaabbb", "bbbbbaaba", "bbabbb", "ab", "bbbbb", "abbaba", "baabba", "bab", "aabaabb", "aaba", "babaab", "bbbbbabbbb", "abaaabbaa", "babaaba", "aaabbb", "aabaabaaab", "bbaab", "bbaaaabab", "bababbb", "babaaaab" ]
 
-console.log(wordBreakRec(A,B))
+// console.log(wordBreakRec(A,B))

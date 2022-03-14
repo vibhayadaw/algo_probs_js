@@ -13,3 +13,4 @@ const reverse = str => {
 }
 
 console.log(reverse('hello   Vibha!!'));
+console.log(reverse('geeks quiz practice code'));
